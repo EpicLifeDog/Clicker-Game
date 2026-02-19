@@ -1,4 +1,4 @@
-windows.onload = function() {
+window.onload = function() {
     if (typeof(Storage) !== "undefined") {
         var clicks = localStorage.getItem("clickCount");
         if (clicks !== "undefined") {
