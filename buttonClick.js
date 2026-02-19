@@ -2,7 +2,7 @@ function clickButton() {
   let x = document.getElementById("clicks");
   if (typeof(Storage) !== "undefined") {
     var clicks = localStorage.getItem("clickCount");
-    if (clicks !== "undefined") {
+    if (clicks !== null) {
       clicks++;
     } else {
       clicks = 1;
@@ -12,4 +12,5 @@ function clickButton() {
   } else {
     x.innerHTML = "Error";
   }
+
 }
