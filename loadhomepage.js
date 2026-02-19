@@ -7,7 +7,7 @@ window.onload = function() {
         else {
             document.getElementById("clicks").innerHTML = "Clicks: 0";
         }
-        var cash = localStorage.getItem("cash");
+        var cash = localStorage.getItem("cashCount");
         if (cash === "undefined" || null) {
             document.getElementById("cash").innerHTML = "$" + cash;
         }
