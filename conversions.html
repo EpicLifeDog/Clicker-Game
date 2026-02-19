@@ -8,6 +8,8 @@
   </head>
   <body>
 
+    <button onclick="location.href='index.html'">Home</button>
+
     <h1>Convert Your Curency Here</h1>
     <p id="save"></p>
     <br>
@@ -17,10 +19,15 @@
     <br>
 
     <h5>Conversion List</h5>
-    
+    <p><Strong>Base</Strong> Clicks: 1</p>
+    <p>$: 0.1</p>
 
-    <button id="CashtoClicksConvert" onclick="convertClashtoClicks()">Cash -> Clicks</button>
+    <button id="CashtoClicksConvert" onclick="convertCashtoClicks()">Cash -> Clicks</button>
+    <label for="CA>CL">How many converted?</label><br>
+    <input type="text" id="CA>CL" name="CA>CL"><br>
     <button id="ClickstoCashConvert" onclick="convertClickstoCash()">Clicks -> Cash</button>
+    <label for="CL>CA">How many converted?</label><br>
+    <input type="text" id="CL>CA" name="CL>CA"><br>
 
     <script src="saveCheck.js"></script>
     <script src="testFunctions.js"></script>
