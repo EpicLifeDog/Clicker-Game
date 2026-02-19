@@ -8,7 +8,7 @@ window.onload = function() {
             document.getElementById("clicks").innerHTML = "Clicks: 0";
         }
         var cash = localStorage.getItem("cash");
-        if (cash !== "undefined" || null) {
+        if (cash === "undefined" || null) {
             document.getElementById("cash").innerHTML = "$" + cash;
         }
         else {
